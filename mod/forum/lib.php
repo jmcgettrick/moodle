@@ -3153,7 +3153,10 @@ function forum_print_post($post, $discussion, $forum, &$cm, $course, $ownpost=fa
             'content' => $post->message,
             'cmid' => $cm->id,
             'course' => $post->course,
-            'forum' => $post->forum));
+            'forum' => $post->forum,
+            'discussionid' => $post->discussion,
+            'postid' => $post->id
+        ));
     }
 
     // caching
